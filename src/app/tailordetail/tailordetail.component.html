@@ -1,0 +1,140 @@
+<br>
+<br>
+<br>
+
+<div class="container" id="product-section">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Images Gallery</h4>
+      <div *ngIf="oneTailor && oneTailor.tailorPics.length > 0">
+        <img *ngFor="let pic of oneTailor.tailorPics" [src]="pic" alt="" class="image-responsive" style="width: 100px;margin: 25px;" />
+    </div>
+    <p *ngIf="oneTailor && oneTailor.tailorPics.length == 0">Tailor not provided any images...</p>
+      <div class="row">
+        <button *ngIf="userData?.userType == 'user'" type="button" class="btn btn-danger btn-md btn-block" (click)="openSendMsg()">Send Message</button>
+      </div>
+      <div *ngIf="messages">
+        <h4>Your Messages</h4>
+        <div class="row" *ngFor="let message of messages">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{message.createdByName}}</h5>
+              <h6 class="card-title">{{message.creattionDate | date}}</h6>
+              <p class="card-text">_{{message.message}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="oneTailor" class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{oneTailor.shopName}}</h1>
+          <span class="badge badge-primary">Master: {{oneTailor.tailorName}} </span>
+          <span class="text-monospace">
+            {{oneTailor.street}}<span *ngIf="oneTailor.area">,</span>
+            {{oneTailor.area}}<span *ngIf="oneTailor.city">,</span>
+            {{oneTailor.city}}<span *ngIf="oneTailor.country">,</span>
+            {{oneTailor.country}}
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-description">
+            {{oneTailor.description}}
+          </p>
+        </div>
+      </div><!-- end row -->
+
+      <div class="row">
+        <div class="col-md-2">
+          <h1> <span class="badge badge-success">{{oneTailor.rating}}</span></h1>
+        </div>
+        <div class="col-md-10">
+          <span class="sr-only">Four out of {{oneTailor.rating}} Stars</span>
+          <span class="fa fa-star fa-2x" *ngFor="let star of [].constructor(oneTailor.rating)"
+                aria-hidden="true"></span>
+        </div>
+
+      </div><!-- end row -->
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          <h1 class="display-4">Male Dresses</h1>
+        </div>
+        <div class="card-body">
+          <p style="color: blueviolet;">
+            <span *ngFor="let mDress of oneTailor.maleDress; let lastM = last;">{{mDress}}<span
+                *ngIf="!lastM">,</span></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          <h1 class="display-4">Female Dresses</h1>
+        </div>
+        <div class="card-body">
+          <p style="color: darkorange;">
+            <span *ngFor="let fDress of oneTailor.femaleDress; let lastF = last;">{{fDress}}<span
+                *ngIf="!lastF">,</span></span>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          <h1 class="display-4">Product Reviews</h1>
+        </div>
+        <div class="card-body">
+          <div *ngFor="let review of reviews">
+            <p>{{review.text}}</p>
+            <small class="text-muted">Posted by {{review.createdByName ? review.createdByName : Anonymous}} on {{review.createdDate | date}}</small>
+            <br>
+            <small class="text-muted">
+              <span class="sr-only">Four out of {{review.rating}} Stars</span>
+              <span class="fa fa-star fa-2x" *ngFor="let star of [].constructor(review.rating)"
+                aria-hidden="true"></span>
+            </small>
+            <hr>
+          </div>
+          <form *ngIf="showReview">
+            <div class="form-control rating-grid">
+              <label>Give rating: &nbsp;&nbsp;</label>
+              <small class="text-muted rating">
+                <span class="sr-only">Four out of Five Stars</span>
+                <span class="fa fa-star fa-2x custom-star" [ngClass]="{'active': ratingValue >= 1}"
+                  (click)="ratingValue = 1" aria-hidden="true"></span>
+                <span class="fa fa-star fa-2x custom-star" [ngClass]="{'active': ratingValue >= 2}"
+                  (click)="ratingValue = 2" aria-hidden="true"></span>
+                <span class="fa fa-star fa-2x custom-star" [ngClass]="{'active': ratingValue >= 3}"
+                  (click)="ratingValue = 3" aria-hidden="true"></span>
+                <span class="fa fa-star fa-2x custom-star" [ngClass]="{'active': ratingValue >= 4}"
+                  (click)="ratingValue = 4" aria-hidden="true"></span>
+                <span class="fa fa-star fa-2x custom-star" [ngClass]="{'active': ratingValue >= 5}"
+                  (click)="ratingValue = 5" aria-hidden="true"></span>
+              </small>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" [(ngModel)]="reviewMessage" name="reviewMessage" id="reviewMessage"
+                rows="3" placeholder="Enter your review...."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!ratingValue" (click)="submitReview()">Submit</button>
+          </form>
+          <a class="btn btn-success" *ngIf="!showReview && userData?.userType == 'user'" (click)="showReview=true">Leave a Review</a>
+        </div>
+      </div>
+
+      <p>
+        <a *ngFor="let t of tags" class="btn btn-primary btn-md disabled" role="button" style="margin: 4px"><span
+            style="color:black;"> </span> </a>
+      </p>
+
+    </div><!-- end row -->
+
+
+  </div><!-- end container -->
+</div>

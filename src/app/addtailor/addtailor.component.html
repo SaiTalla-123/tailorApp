@@ -1,0 +1,77 @@
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<div class="container">
+  <div *ngIf="!isTailorShopExist" class="jumbotron">
+    <h1 class="display-4">Add New Tailor!</h1>
+    <p class="lead">We bring the best tailors and best prices to your home, so that you can get that perfect look at a
+      great price..</p>
+    <hr class="my-4">
+    <form [formGroup]="addTailorForm" (ngSubmit)="addTailor()">
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="tailorName" name="tailorName" placeholder="Full Name *">
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="shopName" name="shopName" placeholder="Firm Name *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="shopNumber" name="shopNumber" placeholder="Shop Number *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="mobile" name="mobile" placeholder="Mobile *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="email" name="email" placeholder="Email *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="street" name="street" placeholder="Street *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="area" name="area" placeholder="Area" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="city" name="city" placeholder="City *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="country" name="country" placeholder="Country *" class="form-control" />
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" formControlName="description" name="description" id="exampleFormControlTextarea1" rows="3"
+          placeholder="Something about you.... *"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="maleDresses" placeholder="Male Dresses (seperated by comma)"
+          name="maleDress" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="femaleDresses" placeholder="Female Dresses (seperated by comma)"
+          name="femaleDress" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="multipleTags" placeholder="Multiple Tags (seperated by comma)"
+          name="tags" class="form-control" />
+      </div>
+
+      <div class="custom-file">
+        <input type="file" multiple class="custom-file-input" formControlName="pics" name="pics" id="validatedCustomFile" (change)="onFileChange($event)">
+        <label class="custom-file-label" for="validatedCustomFile">Choose pics...</label>
+        <div class="invalid-feedback">Example invalid custom file feedback</div>
+        <img *ngFor='let url of images'  [src]="url" height="100" width="50px" height="50px" style="margin: 3px;"> <br/>
+      </div>
+      <br>
+      <br>
+
+      <button type="submit" class="btn btn-primary btn-lg" [disabled]="addTailorForm.invalid">Add</button>
+      &nbsp;
+      <button type="button" class="btn btn-secondary btn-lg" (click)="resetAddForm()">Reset</button>
+    </form>
+  </div>
+  <div *ngIf="isTailorShopExist">
+    <h4>You have already created your Tailor..</h4>
+  </div>
+</div>

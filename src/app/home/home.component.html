@@ -1,0 +1,101 @@
+<carousel>
+  <slide>
+    <img src="assets/images/nature/1.jpg" alt="first slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Authentic Kanchipuram Silk Sarees </h3>
+     
+    </div>
+  </slide>
+  <slide>
+    <img src="assets/images/nature/2.jpg" alt="second slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 >Bridal Sarees: The Beholder Of Indian Traditions</h3>
+      </div>
+    </div>
+  </slide>
+  <slide>
+    <img src="assets/images/nature/3.jpg" alt="third slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Dress Maker At Your Door Step</h3>
+      
+    </div>
+  </slide>
+</carousel>
+<!--Carousel Ends-->
+
+
+<!--Form Starts-->
+<div *ngIf="!isUserLoggedIn()" class="formSection">
+  <!--First Row-->
+  <form [formGroup]="addUserForm" (submit)="register()">
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <input type="text" formControlName="firstName" name="firstName" class="form-control" required placeholder="First Name *" >
+        <br>
+        <input type="text" formControlName="lastName" name="lastName" class="form-control" required placeholder="Last Name *">
+        <br>
+
+        <select class="custom-select mr-sm-2" formControlName="gender" id="inlineFormCustomSelect" >
+          <option value="">Gender... *</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+        <br>
+        <input type="email" formControlName="email" name="email" class="form-control" required placeholder="Email *" >
+        <br>
+
+        <input type="username" formControlName="userName" name="userName" class="form-control" required placeholder="Username *" >
+
+        <br>
+        <input type="password" formControlName="password" name="password" class="form-control" required placeholder="Password *" >
+        <br>
+        <select class="custom-select mr-sm-2" formControlName="userType" id="inlineFormCustomSelect1" >
+          <option value="">You are.... *</option>
+          <option value="tailor">Tailor</option>
+          <option value="user">User</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success my-2 my-sm-0" [disabled]="addUserForm.invalid" >Register</button>
+      </div>
+    
+    
+    </div>
+
+
+  </form>
+</div>
+
+
+<!--Form Ends-->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="assets/images/nature/h2.jpg"
+        alt="Generic placeholder image" width="140" height="140">
+      <h2>Dress</h2>
+      <p>Apricot-colored dress worn by Jacqueline Kennedy. A dress (also known as a frock or a gown) is a garment consisting of a skirt with an attached bodice (or a matching bodice giving the effect of a one-piece garment).[1] It consists of a top piece that covers the torso and hangs down over the legs. A dress can be any one-piece garment containing a skirt of any length. Dresses can be formal or informal. In many cultures, dresses are more often worn by women and girls.</p>
+      <p><a class="btn btn-secondary" [routerLink]="['/home']" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="assets/images/nature/h3.jpg"
+        alt="Generic placeholder image" width="140" height="140">
+      <h2>Fashion Design</h2>
+      <p>A fashion designer (right) walks with a model wearing a bridal dress created by her, 2016. A catwalk (or fashion runway) is the popular place for showcasing fashion design, especially at fashion shows. Catwalk at Berlin Fashion Week for Michalsky's StyleNite. Fashion design is the art of applying design, aesthetics and natural beauty to clothing and its accessories. It is influenced by cultural and social attitudes, and has varied over time and place. Fashion designers work in a number of ways in designing clothing and accessories such as bracelets and necklaces. Because of the time required to bring a garment onto the market, designers must at times anticipate changes to consumer tastes.</p>
+      <p><a class="btn btn-secondary" [routerLink]="['/home']" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="assets/images/nature/h1.jpg"
+        alt="Generic placeholder image" width="140" height="140">
+      <h2>Bridals</h2>
+      <p>Your wedding day is the ultimate celebration of your true love and devotion. As the bride, you are the center of attention throughout the entire day. Look your best when you say "I Do" in an alluring dress from any of the bridal collections offered by Dress Makers @ "We Are Dress Makers". Industry leading designers like PD and AD create unique looks for every kind of bride. Whether you're looking for a timeless bridal gown or a more modern A-line, you'll find that "We Are Dress Makers" has wedding dresses in colors, cuts, and silhouettes for every body type. Find your dream wedding dress maker today! </p>
+      <p><a class="btn btn-secondary" [routerLink]="['/home']" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+</div>

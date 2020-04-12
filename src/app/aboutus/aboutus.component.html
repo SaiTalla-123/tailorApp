@@ -1,0 +1,31 @@
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<div class="container">
+<div class="jumbotron">
+    <h1 class="display-4">We Are Dress Makers!</h1>
+    <p class="lead">We bring the best tailors and best prices to your home, so that you can get that perfect look at a great price..</p>
+    <hr class="my-4">
+    <p> Our mission is very simple: We want to connect the global tailors with customer and offer a range of high quality custom clothing, sized to perfection,with huge savings.
+
+        We began this venture a few years ago, helping our friends and family get fitted into great clothing through our contacts in India.  
+        
+        We are based in Chennai and we primarily service the global markets.
+        
+        Any questions? We're always here to help or even just for a chat. You can contact us directly at support@wearedressmakers.com</p>
+    <ng-container *ngIf="!isUserLoggedIn()">
+      <span class="lead">
+        <a class="btn btn-primary btn-lg" [routerLink]="['/home']" role="button">Sign Up</a>
+      </span>
+      &nbsp;
+      <span class="lead">
+          <a class="btn btn-primary btn-lg" [routerLink]="['/home']" role="button">Sign In</a>
+      </span>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+
+> wearedressmakers@0.0.0 ng C:\Users\praff\Desktop\angular-che\tailors-angular-spa
+> ng "serve"
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+Date: 2020-04-07T15:36:43.237Z
+Hash: 6652d61b13b9823a740d
+Time: 14301ms
+chunk {main} main.js, main.js.map (main) 85.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 1.93 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+[34mi[39m [90m｢wdm｣[39m: Compiled successfully.
+Terminate batch job (Y/N)? 

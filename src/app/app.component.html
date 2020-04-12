@@ -1,0 +1,53 @@
+<!--Header Starts-->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" [routerLink]="['/home']">
+      <img src="assets/images/logo.svg" alt="" style="width: 120px; margin-top: -40px;" class="image-responsive"/>
+      <span style="font-size: 10px;">We Are Dress Makers</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" [routerLink]="['/tailors']" routerLinkActive="active">Tailors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="active">About Us</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn && userInfo?.userType == 'tailor'">
+            <a class="nav-link" [routerLink]="['/add-tailor']" routerLinkActive="active">Add New Tailor</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn && userInfo?.userType == 'tailor'">
+            <a class="nav-link" [routerLink]="['tailor-detail']" routerLinkActive="active">Tailor Detail</a>
+        </li>
+      </ul>
+      <form *ngIf="!isLoggedIn" class="form-inline mt-2 mt-md-0" (submit)="login()">
+        <input class="form-control mr-sm-2" [(ngModel)]="userName" type="text" name="userName" placeholder="Username *" required aria-label="Username">
+        <input class="form-control mr-sm-2" type="password" [(ngModel)]="password" name="password" placeholder="Password *" required aria-label="Password">
+        <button class="btn btn-outline-success my-2 my-sm-0" [disabled]="!(userName && password)" type="submit">Login</button>
+      </form>
+      <form *ngIf="isLoggedIn" class="form-inline mt-2 mt-md-0" (submit)="logout()">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LogOut</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<!--Header Ends-->
+
+<!--Carousel Starts-->
+
+<div class="app-container">
+  <router-outlet></router-outlet>
+</div>
+<!-- FOOTER -->
+<footer class="container">
+  <p class="float-right"><a [routerLink]="['/home']">Home</a></p>
+  <p>&copy; 2017-2018 We Are Dress Makers, Inc. &middot; <a [routerLink]="['/home']">Privacy</a> &middot; <a [routerLink]="['/home']">Terms</a></p>
+</footer>
+
+

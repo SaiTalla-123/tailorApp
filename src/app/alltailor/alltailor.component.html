@@ -1,0 +1,46 @@
+<br>
+<br>
+<br>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="margin: 1rem;">
+      <div class="form-inline">
+      Search:<input class="form-control" [(ngModel)]="searchQuery" type="text">
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let tailor of allTailors | searchFilter: searchQuery: shopName; let ind=index;" style="margin: 1rem;">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="'assets/images/nature/' + (ind+1) + '.jpg'" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{tailor.shopName}}</h5>
+          <p class="card-text">{{tailor.description}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b> Male Dresses:</b></li>
+          <li class="list-group-item">
+            <span *ngFor="let mDress of tailor.maleDress; let lastM = last;">{{mDress}}<span *ngIf="!lastM">,</span></span>
+          </li>
+        </ul>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b> Female Dresses:</b></li>
+          <li class="list-group-item">
+            <span *ngFor="let fDress of tailor.femaleDress; let lastF = last;">{{fDress}}<span *ngIf="!lastF">,</span></span>
+          </li>
+        </ul>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b> Expertise:</b></li>
+          <li class="list-group-item">
+            <span *ngFor="let tag of tailor.tags; let lastT = last;">{{tag}}<span *ngIf="!lastT">,</span></span>
+          </li>
+        </ul>
+        <div class="card-body">
+          <a class="card-link" [routerLink]="['/tailor-detail', tailor.id]">Read more....</a>
+        </div>
+      </div>
+    </div>
+  </div>

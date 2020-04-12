@@ -1,0 +1,294 @@
+{
+  "tailors": [
+    {
+      "id": 10001,
+      "userId": 20001,
+      "tailorName": "Bharat Master",
+      "shopName": "Bangalore Dress Makers",
+      "shopNumber": "202",
+      "description": "Experts in Bridal Gowns",
+      "dateOfRegistration": "1969-12-31T23:59:58.000+0000",
+      "street": "Pillaiyar Koil Street",
+      "area": "Thoraipakkam",
+      "city": "Bangalore",
+      "country": "India",
+      "mobile": "8888888881",
+      "email": "bangaloredressmaker@gmail.com",
+      "review": "Best Tailors in Bangalore for Gowns",
+      "reviewDate": "1969-12-31T23:59:58.000+0000",
+      "rating": 5,
+      "maleDress": [
+        "achkan",
+        "shirt",
+        "trouser"
+      ],
+      "femaleDress": [
+        "chooridar",
+        "frock",
+        "salwar kameez",
+        "bridal gown"
+      ],
+      "tags": [
+        "achkan",
+        "shirt",
+        "trouser",
+        "chooridar",
+        "frock",
+        "salwar kameez",
+        "bridal gown"
+      ],
+      "tailorPics": []
+    },
+    {
+      "id": 10002,
+      "userId": 20003,
+      "tailorName": "test name",
+      "shopName": "New Trends tailors",
+      "shopNumber": "12",
+      "description": "We makes new trend dresses",
+      "dateOfRegistration": "2020-04-11T11:35:20.639Z",
+      "street": "james street",
+      "area": "East stop",
+      "city": "New York",
+      "country": "USA",
+      "mobile": "999999999",
+      "email": "test@test.com",
+      "rating": 4,
+      "maleDress": [
+        "jeans",
+        " kurtas",
+        " traditional"
+      ],
+      "femaleDress": [
+        "Sarees",
+        " pants"
+      ],
+      "tags": [
+        "Traditional",
+        " ethinic",
+        " party"
+      ],
+      "tailorPics": []
+    },
+    {
+      "id": 10003,
+      "userId": 20003,
+      "tailorName": "sda",
+      "shopName": "sasd",
+      "shopNumber": "34432",
+      "description": "ewrewr",
+      "dateOfRegistration": "2020-04-11T12:04:21.923Z",
+      "street": "hgjg",
+      "area": "dada",
+      "city": "dada",
+      "country": "dada",
+      "mobile": "53234434",
+      "email": "ffafa",
+      "rating": 5,
+      "maleDress": [
+        "as",
+        "dwd",
+        "rwe"
+      ],
+      "femaleDress": [
+        "ee",
+        "ff",
+        "fe"
+      ],
+      "tags": [
+        "efwe",
+        "ewrewr"
+      ],
+      "tailorPics": [
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAwNJREFUSA3Fl11IVEEUx/9zdXW1qDQxWpKETfsgxIqCUklN0CApMIqCIIQeIqhWHzKC2BezHkQIqoeIPh6KoEKoKKHuCtXiQ0sW9qCoSKGmsYqZ+RHtdM69bLvrR0661w7MvXPn4/zOzJ2Z+78CKuaWGkYbd0AE9gFiCyAddKfEJnsoT0n6ILV6JOR74RYBs27mq5i5imrcHjvG5UkEZCU9pf61baiyH5qoRby4DHfBWKg4MjczuEovo6Z1kDItsovikxCfqaULFwsfTtdDm1IopcBZvZqAD+YMZaccMPswfU0ZYGSBAfXcow4HpwQ0nwIh7qOm4BCEkEE3McGMcZ/YySM9HlEWnYeN0LtseH1bD7oLjZjfKU+NlSbE/uA7N8G8esdkG4HntpBUg+UFZxeZvNrNxcVbxmooB8cMZpEJGIeD3kt51X3K/eZj/UgoXBlrnEiKUP/5PHwdmcCbriHcbe7Dy47BuQSQykzNPAbV+jd9GsKS+FiUb3XgxbFN0Ck5kxPUOoe3oqNXoEr30Nznh5fPlt/sWIzqYidK1i7HwI+fKL31AV4KStmEaKTFxQe+mt05sB4VuWkYGvuF3Tff40R9KxJtGh4fzfrHkUsHgYNfmdnhRWuSUbsnAy2ubTidswrXmrpR+bQdyYk2XC9bN7uDPy0Eg9Ut/ZIXxTea0TEwirrSTJwi+FWCN7T5UeBMwi5KSibpA0pTTd9SNVu9zI5FcRq2X/HhY9931JQ4jSk+19BpODicvULNkZC9PNXK4Ofl2Xh0JAtFGUmoeNIOuy0GezekwNc9jL7hCeSkL1UDE5NH7FNsjWetfnT6R9HyZQSNnYPo/TaObFrhbO96hpGSGKfmSoq3Amc8uUDglVqPaLXS8jRDIwH90XKp4IeOzHyvZggz1kgLZcwiMWhuJxZmpkayFs8MZpGZYFMNuqylGt5dQeVpgrmM1aAmLlgGZ99hijMkfZi4gGIvNGIGswpkNRjNkbOvSQrTQPFlWrNY0EdO9eQI/ssvTHgQFvy0/QZQLx6YnW24SgAAAABJRU5ErkJggg==",
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAq5JREFUSA3FVztrFFEU/s5k1URQ0CLoQoioRBELRbHYZh/5AxGFGLCy00JZBF9YbBMVRARBY2FjE4kPUCsbJxFELLJEAkEIKhFxF1cwRQJuos71nDuMs5Pdmb0mmeTAzNx7Xt99zZlvCCZSUBZ+jqRATg9ABwCV5CdfIqrEbb5UEcp6irbMGxTIcW3hdwo3saUw3Io5dRqOOsu99khf31iBRTewjm6hkK366mArHPiCfYRdb0KpjmCIYY/oC3vmcS33pFGEVadUinDR7mfAx4sGlaQyYMnh5qqbYFChQYcfcEBv3YCWoiAawtVsH4iUl6bFa+jnfFpmejKgW57OXthTa/D6vu2l82cseypLE6cQHfX23AWW01tVkwy8uINkOlg5cK3UJafdPVzyysQNKoMTDMFiIejiYJe5bfqeStxSpIK23NaErkhNQAeP7UHfvi1GYA/Hv6F3cCLKt10wLbcMRvkB2R2boh1qrPuTG2p6IU0uvbzHUnuj5cSj96j++hPtxNa53w7OPJ9s6ieYDCwFP1oyPOPUQBHj5dlQR7Gl7owivd1kdVRSZtwU+Fy6E3cP78bxoQlcf/UZjvOvAOm26MQ2wD7nM52hg/MNJMBmcqhjI96eOoip6Sq6743hXWkGY19ndFt0YhMfI1FQCV5q/paiyyRg/doW3O7ZhZcffuDSi4865HJuG7p3bjYJ931IlRlYf8SNgL1IAfpvMC9YP6kkh6sY0DXofJ+db6BtrKqY+CoaTWi6AkcYRqjInmaMTisw8mk6NE+N4dmqlUxLEzPhSCslgsVk0H2dhJi5HCleeMEQLBYX2GWD+XhRdfa8xzz9AiJs0KIrsYFL7hrG6VMfQVxBsufPWICFBQobXM6ZS64FDFNDya2hxEzog0u9cASr8gtTO4gYftr+AgnuDPENSX6QAAAAAElFTkSuQmCC"
+      ]
+    },
+    {
+      "userId": 20003,
+      "tailorName": "new test name",
+      "shopName": "new tailor",
+      "shopNumber": "190",
+      "description": "This is a test Shop",
+      "dateOfRegistration": "2020-04-12T06:24:16.055Z",
+      "street": "abc",
+      "area": "",
+      "city": "efg",
+      "country": "India",
+      "mobile": "9889099090",
+      "email": "dasda@jkadjk.com",
+      "rating": 5,
+      "maleDress": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "femaleDress": [
+        "ad",
+        "fg",
+        "hj"
+      ],
+      "tags": [
+        "hello",
+        " test",
+        " tradition"
+      ],
+      "tailorPics": [
+        "data:image/png;base64,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",
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAArtJREFUSA3FV01oE1EQ/mZNMVGhUDTFQJB6yKWSSw9CEWwDHoWKongQvHpRg1DtLR60VpCCB++CoIJWxYOIkHoo9WIRhR6sQSJqQ9Ka+kvSaPOc2SW7+dmkLzWJA7s7b2befG/ee/v2W4KOxJSB3PNBUHEEoAFABfjJl4haZJ0vNQdlPIRvaBYxKlq++neq72JPbNqLVXUaRXWOW/6GsY4zA4OuYTNdR2w475grtfrAF+KHOXQSSgUru2i2iD5yZBRXIvfdehg1RqUIY/FLDHhvw6CSVAYsOaxcNQVWGkzQ6dvc4VjNgP7FQHQX48PHQaRKaTaVFPNZ2C+VnqqwtaaxB/FkF2ZuxkvpnIplTWVq2ilER0prbgHL7s2rBQbe2EbSHaxsOC+FZLdbm0temXaDyuAEQ7BYCObhEE+xrvueot+/FRcP9CG0YwsyPwu48eIzpuaXJJ+OZOCL7PSYJ1IToAYvzuOTYfT1+GyQpwtZW9dQ/ILpMY9Be5Ov3y3Y7bVB77xOYyb5Fc/eNQXM81wc4TWWs1dPerd14VD/djs4/aOAxe+rWMn9sW16Cg0wsBz4enI03IvJgyE7+My+IKZOhDG4q9u26SkqIBVrA3/6lkcym7Nzp7jat0u/kFh2bLazoUIBT0N/lfPB/DISX3J4c3av6Rl9ksCtV+mqKI2m4g8oTzV/SzsspFIy1Z0HZkypeK7D9TIkvTRMutJxZDwyTI4EZHSx14rOabO2LrNyzcpH5tCs9XUai48yr5pwDXMx7u7xMq0ifFjJ43fZQFxCa00Gncd45CqvMYsQM4sj1Qa6WN5n8+Zr1TSoYAgWiwVsscGoC0arTdES87SAJb2wQYMutxrJzie5yxinQ30kooNkz6lYgIUFChtsZeWSq4phmlByc5U2E/rKqa4ewX/5hSkfhMnLWvvT9hfMDwoV0L3FJQAAAABJRU5ErkJggg=="
+      ],
+      "pics": "C:\\fakepath\\goal-education.png",
+      "id": 10004
+    }
+  ],
+  "users": [
+    {
+      "id": 20001,
+      "firstName": "sai",
+      "lastName": "talla",
+      "gender": "male",
+      "userName": "saikumar.talla",
+      "password": "12345",
+      "email": "saikumar.talla@cgi.com",
+      "userType": "tailor"
+    },
+    {
+      "id": 20002,
+      "firstName": "test",
+      "lastName": "a",
+      "gender": "undefined",
+      "userName": "testuser",
+      "password": "password",
+      "email": "ss@gmail.com",
+      "userType": "user"
+    },
+    {
+      "firstName": "testT",
+      "lastName": "other",
+      "email": "atest@test.com",
+      "userName": "testtailor",
+      "gender": "male",
+      "password": "password",
+      "userType": "tailor",
+      "id": 20003
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30001,
+      "tailorId": 10001,
+      "text": "some review message",
+      "rating": 5,
+      "createdDate": "2020-04-11T12:04:21.923Z"
+    },
+    {
+      "id": 30002,
+      "tailorId": 10001,
+      "text": "some  other review message",
+      "rating": 4,
+      "createdDate": "2020-04-11T12:02:21.923Z"
+    },
+    {
+      "tailorId": "10001",
+      "text": "This is a bad review",
+      "rating": 1,
+      "createdDate": "2020-04-11T15:47:54.710Z",
+      "id": 30003
+    },
+    {
+      "tailorId": "10001",
+      "text": "Testing my review",
+      "rating": 3,
+      "createdDate": "2020-04-11T15:51:01.693Z",
+      "id": 30004
+    },
+    {
+      "tailorId": "10001",
+      "text": "",
+      "rating": 1,
+      "createdBy": "",
+      "createdByName": "",
+      "createdDate": "2020-04-11T16:00:33.420Z",
+      "id": 30005
+    },
+    {
+      "tailorId": "10001",
+      "text": "test",
+      "rating": 4,
+      "createdDate": "2020-04-11T16:33:31.540Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "id": 30006
+    },
+    {
+      "tailorId": "10001",
+      "text": "Fine review",
+      "rating": 5,
+      "createdDate": "2020-04-12T05:33:51.010Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "id": 30007
+    },
+    {
+      "tailorId": "10002",
+      "text": "first review",
+      "rating": 5,
+      "createdDate": "2020-04-12T05:34:30.869Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "id": 30008
+    },
+    {
+      "tailorId": "10003",
+      "text": "test first review",
+      "rating": 5,
+      "createdDate": "2020-04-12T05:34:45.536Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "id": 30009
+    }
+  ],
+  "messages": [
+    {
+      "id": "50001",
+      "tailorId": "",
+      "creattionDate": "",
+      "createdBy": "",
+      "createdByName": "",
+      "message": ""
+    },
+    {
+      "tailorId": 10003,
+      "creattionDate": "2020-04-12T09:31:18.519Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "message": "hello tailor",
+      "id": "TbamB21"
+    },
+    {
+      "tailorId": 10003,
+      "creattionDate": "2020-04-12T09:32:34.159Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "message": "one more",
+      "id": "_g0JlF5"
+    },
+    {
+      "tailorId": 10002,
+      "creattionDate": "2020-04-12T09:35:43.098Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "message": "hello message",
+      "id": "b4UzY6S"
+    },
+    {
+      "tailorId": 10002,
+      "creattionDate": "2020-04-12T09:46:54.873Z",
+      "createdBy": 20002,
+      "createdByName": "testuser",
+      "message": "one more message",
+      "id": "YszcYTs"
+    }
+  ]
+}

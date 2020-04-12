@@ -1,0 +1,13 @@
+.rating-grid {
+    background-color: #e9ecef;
+}
+.rating {
+    .custom-star {
+        background-color: #e9ecef;
+        color: white;
+        cursor: pointer;
+    }
+    .active {
+        color: #6c757d !important;;
+    }
+}
